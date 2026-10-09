@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Writer | Career Profile & Story Hub</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- QRCode.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        ink: {
+                            950: '#0a0b0e',
+                            900: '#11131c',
+                            850: '#161824',
+                            800: '#1d2030',
+                            700: '#282d42',
+                            600: '#383e5a',
+                            amber: '#f59e0b',
+                            gold: '#fbbf24',
+                            indigo: '#6366f1',
+                            violet: '#8b5cf6',
+                            rose: '#f43f5e'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0b0e;
+            color: #f3f4f6;
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(245, 158, 11, 0.07) 0%, transparent 40%),
+                radial-gradient(circle at 85% 80%, rgba(99, 102, 241, 0.08) 0%, transparent 45%),
+                radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.04) 0%, transparent 50%),
+                linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+        }
+        .glass-card {
+            background: rgba(17, 19, 28, 0.82);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(245, 158, 11, 0.35);
+            box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.12);
+        }
+        .amber-gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 40%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-amber {
+            box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.2);
+        }
+        /* Custom Range Slider Styling */
+        input[type=range] {
+            -webkit-appearance: none;
+            background: #1d2030;
+            border-radius: 8px;
+            height: 8px;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #f59e0b;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(245, 158, 11, 0.8);
+            transition: transform 0.15s ease;
+        }
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0b0e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #282d42;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-ink-amber selection:text-ink-950">
+
+    <header class="sticky top-0 z-40 w-full glass-card border-b border-ink-700/60 bg-ink-950/85 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo Brand -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-ink-amber via-ink-violet to-ink-indigo flex items-center justify-center text-ink-950 shadow-lg shadow-ink-amber/20 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-feather-pointed text-lg font-bold"></i>
+                    </div>
+                    <span class="font-serif font-bold text-xl sm:text-2xl tracking-tight text-white group-hover:text-ink-amber transition-colors">
+                        Creative <span class="text-ink-amber font-mono text-lg">&lt;Writer&gt;</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium text-slate-300">
+                    <a href="#overview" class="hover:text-ink-amber transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-book-open text-xs text-ink-amber"></i> Overview
+                    </a>
+                    <a href="#skills" class="hover:text-ink-amber transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-pen-nib text-xs text-ink-indigo"></i> Skills & Tools
+                    </a>
+                    <a href="#duties" class="hover:text-ink-amber transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-diagram-project text-xs text-ink-violet"></i> Pipeline
+                    </a>
+                    <a href="#pay" class="hover:text-ink-amber transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-coins text-xs text-ink-gold"></i> Pay Benchmarks
+                    </a>
+                    <a href="#calculator" class="hover:text-ink-amber transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-calculator text-xs text-ink-amber"></i> Project Estimator
+                    </a>
+                </nav>
+
+                <!-- Actions / Share QR Button -->
+                <div class="flex items-center gap-3">
+                    <button id="qrOpenBtn" class="px-3.5 py-2 rounded-xl bg-ink-800 hover:bg-ink-700 text-slate-200 border border-ink-700 text-xs sm:text-sm font-medium flex items-center gap-2 transition-all hover:border-ink-amber/50 shadow-sm" title="Generate Shareable QR Code">
+                        <i class="fa-solid fa-qrcode text-ink-amber"></i>
+                        <span class="hidden sm:inline">QR Share</span>
+                    </button>
+                    
+                    <!-- Mobile Drawer Toggle -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-xl text-slate-400 hover:text-white hover:bg-ink-800 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-ink-900 border-b border-ink-700 px-4 pt-2 pb-4 space-y-2 text-sm">
+            <a href="#overview" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-ink-800 hover:text-ink-amber">
+                <i class="fa-solid fa-book-open mr-2 text-ink-amber"></i> Overview
+            </a>
+            <a href="#skills" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-ink-800 hover:text-ink-amber">
+                <i class="fa-solid fa-pen-nib mr-2 text-ink-indigo"></i> Skills & Tools
+            </a>
+            <a href="#duties" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-ink-800 hover:text-ink-amber">
+                <i class="fa-solid fa-diagram-project mr-2 text-ink-violet"></i> Pipeline
+            </a>
+            <a href="#pay" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-ink-800 hover:text-ink-amber">
+                <i class="fa-solid fa-coins mr-2 text-ink-gold"></i> Pay Benchmarks
+            </a>
+            <a href="#calculator" class="mobile-link block px-3 py-2 rounded-lg font-medium text-slate-200 hover:bg-ink-800 hover:text-ink-amber">
+                <i class="fa-solid fa-calculator mr-2 text-ink-amber"></i> Project Estimator
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="overview" class="relative pt-12 pb-20 overflow-hidden">
+            <!-- Glow Background Highlights -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-ink-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute top-1/3 right-10 w-80 h-80 bg-ink-indigo/12 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto">
+                    <!-- Writing Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-ink-800/90 border border-ink-amber/30 text-xs sm:text-sm font-mono text-ink-amber mb-6 shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-ink-amber animate-ping"></span>
+                        MANUSCRIPT IN PROGRESS • DRAFT v3.2
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Creative <span class="amber-gradient-text">Writer</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-xl font-light leading-relaxed mb-8 italic font-serif">
+                        Author, Narrative Designer, Scriptwriter & Storyteller. Crafting immersive fictional worlds, compelling character arcs, sharp dialogue, and interactive branching storylines for books, screen, and digital games.
+                    </p>
+
+                    <!-- Key Discipline Badges -->
+                    <div class="flex flex-wrap justify-center gap-2.5 text-xs sm:text-sm mb-10 font-mono">
+                        <span class="px-3.5 py-2 rounded-xl glass-card text-slate-200 flex items-center gap-2 border-ink-700">
+                            <i class="fa-solid fa-globe text-ink-amber"></i> Worldbuilding & Lore
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl glass-card text-slate-200 flex items-center gap-2 border-ink-700">
+                            <i class="fa-solid fa-gamepad text-ink-indigo"></i> Game Narrative Design
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl glass-card text-slate-200 flex items-center gap-2 border-ink-700">
+                            <i class="fa-solid fa-clapperboard text-ink-violet"></i> Screenwriting
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl glass-card text-slate-200 flex items-center gap-2 border-ink-700">
+                            <i class="fa-solid fa-book text-ink-gold"></i> Fiction Novels
+                        </span>
+                        <span class="px-3.5 py-2 rounded-xl glass-card text-slate-200 flex items-center gap-2 border-ink-700">
+                            <i class="fa-solid fa-comments text-rose-400"></i> Dialogue Polish
+                        </span>
+                    </div>
+
+                    <!-- Call to Action Buttons -->
+                    <div class="flex flex-wrap justify-center gap-4 text-xs sm:text-sm font-semibold">
+                        <a href="#skills" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-ink-amber via-ink-violet to-ink-indigo text-ink-950 font-bold hover:brightness-110 transition-all shadow-lg shadow-ink-amber/20 flex items-center gap-2">
+                            <i class="fa-solid fa-feather"></i> Explore Skills
+                        </a>
+                        <a href="#calculator" class="px-6 py-3.5 rounded-xl glass-card text-white hover:border-ink-amber transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-calculator text-ink-amber"></i> Project Estimator
+                        </a>
+                        <button onclick="document.getElementById('qrOpenBtn').click()" class="px-6 py-3.5 rounded-xl glass-card text-slate-300 hover:text-white transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-qrcode text-ink-indigo"></i> Generate QR Code
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Interactive Terminal Bar Header -->
+                <div class="mt-14 glass-card rounded-2xl p-4 sm:p-6 glow-amber border-ink-amber/20 max-w-4xl mx-auto">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs">
+                        <div class="flex items-center gap-3">
+                            <div class="flex gap-1.5">
+                                <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                            </div>
+                            <span class="text-slate-400">~/stories/manuscript_draft.scriv</span>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-4 text-slate-300">
+                            <span><i class="fa-solid fa-font text-ink-amber mr-1"></i> Target: 75,000 Words</span>
+                            <span><i class="fa-solid fa-tree text-ink-indigo mr-1"></i> Nodes: 124 Branching</span>
+                            <span class="text-ink-violet"><i class="fa-solid fa-check-double mr-1"></i> Ready for GitHub Pages</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-16 bg-ink-900/60 border-t border-ink-700/60 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-ink-amber font-mono font-semibold text-xs sm:text-sm uppercase tracking-wider">// Section 01</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white mt-2">Skills & Technical Software Suite</h2>
+                    <p class="text-slate-400 text-sm sm:text-base mt-2">Core narrative craft competencies, specialized writing software, and academic credentials.</p>
+                </div>
+
+                <!-- Core Competencies Grid -->
+                <h3 class="text-lg font-serif font-bold text-white mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-quill-wing text-ink-amber"></i> Core Narrative Competencies
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    
+                    <!-- Competency 1 -->
+                    <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-ink-amber/10 border border-ink-amber/30 flex items-center justify-center text-ink-amber mb-5">
+                            <i class="fa-solid fa-globe text-xl"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white mb-2">Worldbuilding & Lore Architecture</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Constructing rich socio-political systems, magic or sci-fi tech rules, deep historical timelines, mythologies, and cultural nuances.
+                        </p>
+                        <span class="text-xs font-mono text-ink-amber bg-ink-950 px-2.5 py-1 rounded-md border border-ink-amber/30">Lore • Factions • Timelines</span>
+                    </div>
+
+                    <!-- Competency 2 -->
+                    <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-ink-indigo/10 border border-ink-indigo/30 flex items-center justify-center text-ink-indigo mb-5">
+                            <i class="fa-solid fa-user-gear text-xl"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white mb-2">Character Architecture & Motivation</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Designing complex psychological profiles, internal flaws, external goals, arc progression, and authentic character voices.
+                        </p>
+                        <span class="text-xs font-mono text-ink-indigo bg-ink-950 px-2.5 py-1 rounded-md border border-ink-indigo/30">Arcs • Flaws • Psychology</span>
+                    </div>
+
+                    <!-- Competency 3 -->
+                    <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-ink-violet/10 border border-ink-violet/30 flex items-center justify-center text-ink-violet mb-5">
+                            <i class="fa-solid fa-comments text-xl"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white mb-2">Dialogue Crafting & Subtext</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Writing sharp, rhythmic, character-specific dialogue with layered subtext, emotional resonance, and dramatic tension.
+                        </p>
+                        <span class="text-xs font-mono text-ink-violet bg-ink-950 px-2.5 py-1 rounded-md border border-ink-violet/30">Subtext • Rhythm • Voice</span>
+                    </div>
+
+                    <!-- Competency 4 -->
+                    <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-ink-gold/10 border border-ink-gold/30 flex items-center justify-center text-ink-gold mb-5">
+                            <i class="fa-solid fa-chart-line text-xl"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white mb-2">Plot, Pacing & Beat Architecture</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Structuring three-act or five-act narrative arcs, Hero’s Journey beats, suspense buildup, cliffhangers, and narrative momentum.
+                        </p>
+                        <span class="text-xs font-mono text-ink-gold bg-ink-950 px-2.5 py-1 rounded-md border border-ink-gold/30">Three-Act • Beat Sheets</span>
+                    </div>
+
+                    <!-- Competency 5 -->
+                    <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 mb-5">
+                            <i class="fa-solid fa-sitemap text-xl"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white mb-2">Branching & Interactive Storytelling</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Authoring player choices, non-linear plot trees, state tracking variables, quest design, and modular narrative logic for games.
+                        </p>
+                        <span class="text-xs font-mono text-rose-300 bg-ink-950 px-2.5 py-1 rounded-md border border-rose-500/30">Non-Linear • Choice Trees</span>
+                    </div>
+
+                    <!-- Competency 6 -->
+                    <div class="glass-card rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-5">
+                            <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-white mb-2">Genre Mastery & Stylistic Tone</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Adapting tone across Speculative Fiction, Fantasy, Sci-Fi, Crime Thriller, Historical Drama, and Commercial Copywriting.
+                        </p>
+                        <span class="text-xs font-mono text-emerald-300 bg-ink-950 px-2.5 py-1 rounded-md border border-emerald-500/30">Fantasy • Sci-Fi • Thriller</span>
+                    </div>
+
+                </div>
+
+                <!-- Software Suite & Qualifications Split -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Writing Software Suite -->
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h3 class="text-xl font-serif font-bold text-white mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-laptop-code text-ink-indigo"></i> Authoring & Narrative Tools
+                        </h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-6">Industry-standard manuscript environments, screenwriting suites, and interactive story node engines.</p>
+
+                        <div class="space-y-3 font-mono text-xs">
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-ink-950 border border-ink-700">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-amber-950 text-ink-amber flex items-center justify-center font-bold">Sc</div>
+                                    <div>
+                                        <h5 class="font-semibold text-white font-sans text-sm">Scrivener</h5>
+                                        <p class="text-slate-400 text-[11px] font-sans">Long-form novel structuring, corkboard & manuscript binder</p>
+                                    </div>
+                                </div>
+                                <span class="text-ink-amber">Master</span>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-ink-950 border border-ink-700">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-blue-950 text-blue-400 flex items-center justify-center font-bold">FD</div>
+                                    <div>
+                                        <h5 class="font-semibold text-white font-sans text-sm">Final Draft</h5>
+                                        <p class="text-slate-400 text-[11px] font-sans">Industry standard screenplay & TV spec format engine</p>
+                                    </div>
+                                </div>
+                                <span class="text-blue-400">Expert</span>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-ink-950 border border-ink-700">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-purple-950 text-ink-violet flex items-center justify-center font-bold">Tw</div>
+                                    <div>
+                                        <h5 class="font-semibold text-white font-sans text-sm">Twine & Ink (Inkle)</h5>
+                                        <p class="text-slate-400 text-[11px] font-sans">Interactive branching fiction & node-based game dialogue script</p>
+                                    </div>
+                                </div>
+                                <span class="text-ink-violet">Master</span>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-ink-950 border border-ink-700">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-emerald-950 text-emerald-400 flex items-center justify-center font-bold">Art</div>
+                                    <div>
+                                        <h5 class="font-semibold text-white font-sans text-sm">Articy:draft / Notion</h5>
+                                        <p class="text-slate-400 text-[11px] font-sans">Comprehensive worldbuilding bible, lore databases & quest logic</p>
+                                    </div>
+                                </div>
+                                <span class="text-emerald-400">Expert</span>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-ink-950 border border-ink-700">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-rose-950 text-rose-400 flex items-center justify-center font-bold">Obs</div>
+                                    <div>
+                                        <h5 class="font-semibold text-white font-sans text-sm">Obsidian & Google Docs</h5>
+                                        <p class="text-slate-400 text-[11px] font-sans">Markdown graph mapping, collaborative editing & revision passes</p>
+                                    </div>
+                                </div>
+                                <span class="text-rose-300">Proficient</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Credentials & Qualifications -->
+                    <div class="glass-card rounded-2xl p-6 sm:p-8">
+                        <h3 class="text-xl font-serif font-bold text-white mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-graduation-cap text-ink-violet"></i> Academic Credentials & Accreditations
+                        </h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-6">Degrees, published works, and literary industry affiliations.</p>
+
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-xl bg-ink-950 border border-ink-700">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <h5 class="font-semibold text-white text-sm">MA in Creative Writing / English Literature</h5>
+                                        <p class="text-xs text-slate-400">UK Higher Education Qualification</p>
+                                        <p class="text-xs text-slate-500 mt-1">Specialization in narrative structure, prose editing, and contemporary genre literature.</p>
+                                    </div>
+                                    <span class="text-xs font-mono font-semibold px-2 py-1 bg-ink-amber/10 text-ink-amber rounded border border-ink-amber/30">MA Degree</span>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-ink-950 border border-ink-700">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <h5 class="font-semibold text-white text-sm">Member of the Society of Authors (SoA)</h5>
+                                        <p class="text-xs text-slate-400">Professional Union Body</p>
+                                        <p class="text-xs text-slate-500 mt-1">Accredited member with verified publication record, contract compliance, and copyright ethics.</p>
+                                    </div>
+                                    <span class="text-xs font-mono font-semibold px-2 py-1 bg-ink-indigo/10 text-ink-indigo rounded border border-ink-indigo/30">SoA Member</span>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-ink-950 border border-ink-700">
+                                <div class="flex items-start justify-between">
+                                    <div>
+                                        <h5 class="font-semibold text-white text-sm">Certified Interactive Narrative Designer</h5>
+                                        <p class="text-xs text-slate-400">Game Writing Industry Certification</p>
+                                        <p class="text-xs text-slate-500 mt-1">Verified expertise in Twine/Ink logic integration, game script formatting, and voice recording direction.</p>
+                                    </div>
+                                    <span class="text-xs font-mono font-semibold px-2 py-1 bg-purple-950 text-purple-300 rounded border border-purple-800">Game Narrative Cert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="duties" class="py-16 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-ink-violet font-mono font-semibold text-xs sm:text-sm uppercase tracking-wider">// Section 02</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white mt-2">Duties & Authoring Workflow Pipeline</h2>
+                    <p class="text-slate-400 text-sm sm:text-base mt-2">The structured 6-stage lifecycle for novels, screenplays, and interactive video game stories.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Step 1 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-ink-amber/20 text-ink-amber font-mono flex items-center justify-center font-bold text-sm mb-4">
+                                01
+                            </div>
+                            <h4 class="font-serif text-lg font-bold text-white mb-2">Research, Premise & World Bible</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Defining the logline premise, conducting historical/technical research, compiling the world bible, magic systems, and faction histories.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-ink-700/80 text-xs font-mono text-ink-amber flex items-center gap-2">
+                            <i class="fa-solid fa-book-bookmark"></i> World Bible & Logline
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-ink-indigo/20 text-ink-indigo font-mono flex items-center justify-center font-bold text-sm mb-4">
+                                02
+                            </div>
+                            <h4 class="font-serif text-lg font-bold text-white mb-2">Beat Sheet & Narrative Outlining</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Plotting Save-the-Cat or 3-act beat sheets, mapping chapter scenes, establishing character motivations, and designing branching choice trees.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-ink-700/80 text-xs font-mono text-ink-indigo flex items-center gap-2">
+                            <i class="fa-solid fa-list-check"></i> Outlines & Choice Nodes
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-ink-violet/20 text-ink-violet font-mono flex items-center justify-center font-bold text-sm mb-4">
+                                03
+                            </div>
+                            <h4 class="font-serif text-lg font-bold text-white mb-2">First Draft Manuscript Execution</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Writing raw chapter text or script scenes, maintaining daily word count targets, capturing dialogue momentum, and drafting non-stop.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-ink-700/80 text-xs font-mono text-ink-violet flex items-center gap-2">
+                            <i class="fa-solid fa-keyboard"></i> Raw Word Count Pass
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-ink-gold/20 text-ink-gold font-mono flex items-center justify-center font-bold text-sm mb-4">
+                                04
+                            </div>
+                            <h4 class="font-serif text-lg font-bold text-white mb-2">Structural & Line Editing Passes</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Analyzing plot holes, trimming fluff, tightening sentence rhythm, polishing character voices, and verifying consistency across lore.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-ink-700/80 text-xs font-mono text-ink-gold flex items-center gap-2">
+                            <i class="fa-solid fa-highlighter"></i> Structural Polish & Line Edits
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-rose-500/20 text-rose-400 font-mono flex items-center justify-center font-bold text-sm mb-4">
+                                05
+                            </div>
+                            <h4 class="font-serif text-lg font-bold text-white mb-2">Beta Readers & Sensitivity Review</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Distributing manuscript to beta readers, incorporating editor feedback notes, adjusting emotional beats, and proofreading punctuation.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-ink-700/80 text-xs font-mono text-rose-400 flex items-center gap-2">
+                            <i class="fa-solid fa-users-viewfinder"></i> Beta Feedback & Proofing
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 font-mono flex items-center justify-center font-bold text-sm mb-4">
+                                06
+                            </div>
+                            <h4 class="font-serif text-lg font-bold text-white mb-2">Pitch Package / Game Engine Handoff</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Preparing agent queries and synopsis pitches, or exporting Twine/Articy JSON node files for unity/unreal engine developer integration.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-ink-700/80 text-xs font-mono text-emerald-400 flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Query Pitch or Engine Export
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="pay" class="py-16 bg-ink-900/60 border-t border-ink-700/60 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-ink-gold font-mono font-semibold text-xs sm:text-sm uppercase tracking-wider">// Section 03</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white mt-2">Average Pay & Revenue Benchmarks</h2>
+                    <p class="text-slate-400 text-sm sm:text-base mt-2">UK salary benchmarks for staff writers, freelance day rates, book advance royalties, and narrative contracts.</p>
+                </div>
+
+                <!-- Pay Tiers Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    
+                    <!-- Tier 1 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono font-semibold text-ink-amber uppercase tracking-wide">Junior Writer / Copywriter</span>
+                            <h3 class="font-serif text-2xl font-extrabold text-white mt-2 mb-1">£22k – £28k</h3>
+                            <p class="text-slate-400 text-xs mb-4">Annual Base Salary (UK)</p>
+                            <p class="text-slate-300 text-xs leading-relaxed border-t border-ink-700/80 pt-3">
+                                Entry-level staff writer or junior narrative assistant handling flavor text, quest descriptions, or junior copywriting.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 text-[11px] font-mono text-slate-400">
+                            Freelance: ~£150 – £200 / day
+                        </div>
+                    </div>
+
+                    <!-- Tier 2 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between border-ink-amber/40">
+                        <div>
+                            <span class="text-xs font-mono font-semibold text-ink-indigo uppercase tracking-wide">Mid-Level / Staff Writer</span>
+                            <h3 class="font-serif text-2xl font-extrabold text-white mt-2 mb-1">£28k – £42k</h3>
+                            <p class="text-slate-400 text-xs mb-4">Annual Base Salary (UK)</p>
+                            <p class="text-slate-300 text-xs leading-relaxed border-t border-ink-700/80 pt-3">
+                                Experienced narrative designer or published author writing core dialogue scripts, character arcs, and book projects.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 text-[11px] font-mono text-slate-400">
+                            Freelance: ~£220 – £320 / day
+                        </div>
+                    </div>
+
+                    <!-- Tier 3 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono font-semibold text-ink-violet uppercase tracking-wide">Senior / Lead Narrative Designer</span>
+                            <h3 class="font-serif text-2xl font-extrabold text-white mt-2 mb-1">£42k – £65k+</h3>
+                            <p class="text-slate-400 text-xs mb-4">Annual Base Salary (UK)</p>
+                            <p class="text-slate-300 text-xs leading-relaxed border-t border-ink-700/80 pt-3">
+                                Lead writer overseeing world bibles, narrative teams, TV spec options, and major studio video game releases.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 text-[11px] font-mono text-slate-400">
+                            Freelance: ~£350 – £450+ / day
+                        </div>
+                    </div>
+
+                    <!-- Tier 4 -->
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-mono font-semibold text-ink-gold uppercase tracking-wide">Bestselling Author / Showrunner</span>
+                            <h3 class="font-serif text-2xl font-extrabold text-white mt-2 mb-1">£70k – £150k+</h3>
+                            <p class="text-slate-400 text-xs mb-4">Advances & Royalty Income</p>
+                            <p class="text-slate-300 text-xs leading-relaxed border-t border-ink-700/80 pt-3">
+                                Top-tier authors receiving major traditional publisher advances, film option rights, and syndicated TV royalties.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 text-[11px] font-mono text-slate-400">
+                            Option Rates: £10k – £50k+ / script
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Income Source Distribution Breakdown -->
+                <div class="glass-card rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto">
+                    <h3 class="font-serif font-bold text-white text-base sm:text-lg mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie text-ink-amber"></i> Creative Income Stream Distribution
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <div class="p-4 rounded-xl bg-ink-950 border border-ink-700">
+                            <span class="text-2xl font-black text-ink-amber block font-mono">35%</span>
+                            <span class="text-xs text-slate-300 font-semibold block mt-1">Book Advances & Royalties</span>
+                            <span class="text-[10px] text-slate-500">Traditional & Indie Publishing</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-ink-950 border border-ink-700">
+                            <span class="text-2xl font-black text-ink-indigo block font-mono">30%</span>
+                            <span class="text-xs text-slate-300 font-semibold block mt-1">Game Narrative Contracts</span>
+                            <span class="text-[10px] text-slate-500">AAA & Indie Game Studios</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-ink-950 border border-ink-700">
+                            <span class="text-2xl font-black text-ink-violet block font-mono">20%</span>
+                            <span class="text-xs text-slate-300 font-semibold block mt-1">Screenwriting & Options</span>
+                            <span class="text-[10px] text-slate-500">Film, TV & Audio Drama</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-ink-950 border border-ink-700">
+                            <span class="text-2xl font-black text-ink-gold block font-mono">15%</span>
+                            <span class="text-xs text-slate-300 font-semibold block mt-1">Editing & Grants</span>
+                            <span class="text-[10px] text-slate-500">Arts Council & Freelance Edits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator" class="py-16 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-ink-amber font-mono font-semibold text-xs sm:text-sm uppercase tracking-wider">// Section 04</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white mt-2">Writing Project Scope & Cost Estimator</h2>
+                    <p class="text-slate-400 text-sm sm:text-base mt-2">Select project format, target word count, turnaround timeline, and lore depth to calculate reading time, studio hours, and fee estimates.</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 sm:p-8 border-ink-amber/30 max-w-4xl mx-auto glow-amber">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        
+                        <!-- Configuration Controls -->
+                        <div class="lg:col-span-7 space-y-6">
+                            
+                            <!-- Project Format -->
+                            <div>
+                                <label class="text-xs font-semibold text-slate-200 mb-2 block flex items-center justify-between">
+                                    <span><i class="fa-solid fa-file-pen text-ink-amber mr-1.5"></i> Project Format / Medium</span>
+                                </label>
+                                <select id="formatSelect" class="w-full bg-ink-950 border border-ink-700 text-white text-xs sm:text-sm rounded-xl p-3 focus:border-ink-amber focus:outline-none font-mono">
+                                    <option value="0.06" data-hours="400" data-name="Novel / Novella Fiction Manuscript" selected>Novel / Novella Manuscript (Fiction)</option>
+                                    <option value="0.08" data-hours="300" data-name="Video Game Script & Branching Dialogue">Video Game Script & Interactive Branching Narrative</option>
+                                    <option value="0.09" data-hours="250" data-name="Feature Screenplay or TV Spec Script">Feature Screenplay / TV Drama Spec Script</option>
+                                    <option value="0.07" data-hours="500" data-name="Short Story Collection / Essay">Short Story Collection / Anthological Fiction</option>
+                                    <option value="0.03" data-hours="600" data-name="Manuscript Structural Editing & Line Polish">Structural Manuscript Editing & Line Polish</option>
+                                </select>
+                            </div>
+
+                            <!-- Word Count Slider -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <label for="wordSlider" class="text-xs font-semibold text-slate-200 flex items-center gap-1.5">
+                                        <i class="fa-solid fa-arrow-down-short-wide text-ink-indigo"></i> Target Word Count
+                                    </label>
+                                    <span id="wordVal" class="text-xs font-mono text-ink-amber font-bold bg-ink-950 px-2.5 py-1 rounded-md border border-ink-700">25,000 Words</span>
+                                </div>
+                                <input type="range" id="wordSlider" min="1000" max="100000" step="1000" value="25000" class="w-full">
+                                <div class="flex justify-between text-[10px] text-slate-500 font-mono mt-1">
+                                    <span>1,000 (Short)</span>
+                                    <span>50,000 (Novella)</span>
+                                    <span>100,000+ (Epic)</span>
+                                </div>
+                            </div>
+
+                            <!-- Turnaround Speed -->
+                            <div>
+                                <label class="text-xs font-semibold text-slate-200 mb-2 block flex items-center gap-1.5">
+                                    <i class="fa-solid fa-stopwatch text-ink-violet"></i> Turnaround Speed & Urgency
+                                </label>
+                                <select id="speedSelect" class="w-full bg-ink-950 border border-ink-700 text-white text-xs sm:text-sm rounded-xl p-3 focus:border-ink-amber focus:outline-none font-mono">
+                                    <option value="1.0" data-days="1.0" selected>Standard Schedule (Paced drafting & revisions)</option>
+                                    <option value="1.3" data-days="0.7">Expedited Delivery (+30% Rush Rate)</option>
+                                    <option value="1.6" data-days="0.45">Priority Sprint Crunch (+60% Emergency Rate)</option>
+                                </select>
+                            </div>
+
+                            <!-- Worldbuilding & Lore Depth -->
+                            <div>
+                                <label class="text-xs font-semibold text-slate-200 mb-2 block flex items-center gap-1.5">
+                                    <i class="fa-solid fa-globe text-ink-gold"></i> Worldbuilding & Research Depth
+                                </label>
+                                <select id="loreSelect" class="w-full bg-ink-950 border border-ink-700 text-white text-xs sm:text-sm rounded-xl p-3 focus:border-ink-amber focus:outline-none font-mono">
+                                    <option value="1.0" data-name="Light (Real-world contemporary setting)">Light (Contemporary real-world setting)</option>
+                                    <option value="1.25" data-name="Moderate (Historical research or low fantasy)" selected>Moderate (Historical setting or low fantasy rules)</option>
+                                    <option value="1.5" data-name="Extensive (Deep original sci-fi / high fantasy lore)">Extensive (Deep original magic, tech, or alien universe)</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <!-- Quote Output Display -->
+                        <div class="lg:col-span-5 bg-ink-950 rounded-2xl p-6 border border-ink-700 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between pb-4 border-b border-ink-700">
+                                    <span class="text-xs font-mono font-semibold text-ink-amber uppercase tracking-wider">Manuscript Estimate</span>
+                                    <i class="fa-solid fa-feather text-slate-500"></i>
+                                </div>
+
+                                <div class="mt-6 space-y-5">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <span class="text-slate-400 text-xs block">Estimated Reading Time</span>
+                                            <span id="outReadingTime" class="font-serif text-lg font-bold text-white font-mono">1 Hour 40 Mins</span>
+                                        </div>
+                                        <div>
+                                            <span class="text-slate-400 text-xs block">Estimated Pages</span>
+                                            <span id="outPages" class="font-serif text-lg font-bold text-ink-indigo font-mono">100 Pages</span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <span class="text-slate-400 text-xs block">Estimated Delivery Timeline</span>
+                                        <span id="outTimeline" class="font-serif text-2xl font-bold text-ink-violet mt-1 block font-mono">4.2 Weeks</span>
+                                    </div>
+
+                                    <div>
+                                        <span class="text-slate-400 text-xs block">Estimated Fee Quote (GBP)</span>
+                                        <span id="outCost" class="font-serif text-4xl font-extrabold text-ink-amber mt-1 block font-mono">£1,875</span>
+                                    </div>
+
+                                    <div class="p-3.5 rounded-xl bg-ink-900 border border-ink-800 text-xs text-slate-400 leading-relaxed space-y-1 font-sans">
+                                        <p><i class="fa-solid fa-check text-ink-indigo mr-1.5"></i> Includes structural outline & world bible</p>
+                                        <p><i class="fa-solid fa-check text-ink-indigo mr-1.5"></i> Includes 2 line-editing & polish passes</p>
+                                        <p><i class="fa-solid fa-check text-ink-indigo mr-1.5"></i> Full copyright transfer upon completion</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button id="copyEstimateBtn" class="w-full mt-6 py-3.5 rounded-xl bg-gradient-to-r from-ink-amber via-ink-violet to-ink-indigo hover:brightness-110 text-ink-950 text-xs font-bold transition-all shadow-lg shadow-ink-amber/20 flex items-center justify-center gap-2 font-sans">
+                                <i class="fa-solid fa-copy"></i> Copy Estimate Summary
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-ink-950 border-t border-ink-700/60 py-8 text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-4 text-center space-y-3 font-mono">
+            <p class="font-medium text-slate-400">Creative Writer Career Profile & Narrative Hub</p>
+            <p>Optimized for <span class="text-ink-amber">GitHub Pages</span> hosting & mobile QR sharing.</p>
+            <p class="pt-2 text-slate-600">&copy; <span id="yearSpan"></span> Creative Writer Overview. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="qrModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="glass-card bg-ink-900 border-ink-amber/40 rounded-2xl max-w-md w-full p-6 text-center relative shadow-2xl">
+            <button id="qrCloseBtn" class="absolute top-4 right-4 text-slate-400 hover:text-white p-1">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="w-12 h-12 rounded-full bg-ink-amber/20 text-ink-amber flex items-center justify-center mx-auto mb-3">
+                <i class="fa-solid fa-qrcode text-xl"></i>
+            </div>
+
+            <h3 class="font-serif text-xl font-bold text-white mb-1">GitHub Pages QR Generator</h3>
+            <p class="text-slate-400 text-xs mb-5">Enter your hosted GitHub Pages URL to generate a mobile-scannable QR code for instant viewing.</p>
+
+            <!-- URL Input Field -->
+            <div class="mb-4 text-left font-mono">
+                <label for="qrUrlInput" class="text-xs font-semibold text-slate-300 mb-1 block">Hosted GitHub Pages Link</label>
+                <input type="url" id="qrUrlInput" class="w-full bg-ink-950 border border-ink-700 text-white text-xs rounded-xl p-3 focus:border-ink-amber focus:outline-none" placeholder="https://username.github.io/writer-portfolio/">
+            </div>
+
+            <!-- QR Code Canvas Render Box -->
+            <div class="bg-white p-4 rounded-2xl inline-block shadow-inner mb-4">
+                <div id="qrcode"></div>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button id="copyUrlBtn" class="flex-1 py-2.5 rounded-xl bg-ink-800 hover:bg-ink-700 text-slate-200 text-xs font-semibold border border-ink-700 transition-colors flex items-center justify-center gap-1.5 font-mono">
+                    <i class="fa-solid fa-copy"></i> Copy Link
+                </button>
+                <button id="downloadQrBtn" class="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-ink-amber to-ink-violet text-ink-950 text-xs font-bold transition-colors flex items-center justify-center gap-1.5 shadow-md font-mono">
+                    <i class="fa-solid fa-download"></i> Download PNG
+                </button>
+            </div>
+
+            <!-- GitHub Pages Setup Instructions -->
+            <div class="mt-4 p-3 rounded-xl bg-ink-950 border border-ink-800 text-[11px] text-slate-400 text-left space-y-1 font-mono">
+                <p class="text-ink-amber font-semibold">GitHub Pages Instructions:</p>
+                <p>1. Name this file <code class="text-white">index.html</code> in your repository root.</p>
+                <p>2. Enable Pages in <code class="text-white">Settings -&gt; Pages -&gt; Branch: main</code>.</p>
+                <p>3. Paste your published URL above to download your custom QR code.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Popup -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 bg-ink-amber text-ink-950 px-4 py-2.5 rounded-xl shadow-lg text-xs font-bold flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 font-mono">
+        <i class="fa-solid fa-circle-check"></i> <span id="toastMsg">Action completed successfully!</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set dynamic current year in footer
+            document.getElementById('yearSpan').textContent = new Date().getFullYear();
+
+            // Mobile Navigation Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // QR Code Generator Logic
+            const qrModal = document.getElementById('qrModal');
+            const qrOpenBtn = document.getElementById('qrOpenBtn');
+            const qrCloseBtn = document.getElementById('qrCloseBtn');
+            const qrUrlInput = document.getElementById('qrUrlInput');
+            const qrcodeContainer = document.getElementById('qrcode');
+            const downloadQrBtn = document.getElementById('downloadQrBtn');
+
+            function generateQRCode(url) {
+                if (!url) url = window.location.href;
+                qrcodeContainer.innerHTML = '';
+                
+                new QRCode(qrcodeContainer, {
+                    text: url,
+                    width: 170,
+                    height: 170,
+                    colorDark: "#0a0b0e",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+
+            function openQRModal() {
+                const currentUrl = window.location.href;
+                qrUrlInput.value = currentUrl;
+                generateQRCode(currentUrl);
+                qrModal.classList.remove('hidden');
+            }
+
+            function closeQRModal() {
+                qrModal.classList.add('hidden');
+            }
+
+            qrOpenBtn.addEventListener('click', openQRModal);
+            qrCloseBtn.addEventListener('click', closeQRModal);
+            qrModal.addEventListener('click', (e) => {
+                if (e.target === qrModal) closeQRModal();
+            });
+
+            qrUrlInput.addEventListener('input', (e) => {
+                const val = e.target.value.trim();
+                generateQRCode(val || window.location.href);
+            });
+
+            // Copy URL Button
+            document.getElementById('copyUrlBtn').addEventListener('click', () => {
+                const textToCopy = qrUrlInput.value || window.location.href;
+                copyToClipboard(textToCopy);
+                showToast('GitHub Pages URL copied to clipboard!');
+            });
+
+            // Download QR Code PNG
+            downloadQrBtn.addEventListener('click', () => {
+                const img = qrcodeContainer.querySelector('img');
+                const canvas = qrcodeContainer.querySelector('canvas');
+                let imageSrc = '';
+
+                if (img && img.src) {
+                    imageSrc = img.src;
+                } else if (canvas) {
+                    imageSrc = canvas.toDataURL("image/png");
+                }
+
+                if (imageSrc) {
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = imageSrc;
+                    downloadLink.download = 'writer-portfolio-qr.png';
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();
+                    document.body.removeChild(downloadLink);
+                    showToast('QR Code PNG downloaded!');
+                } else {
+                    showToast('Unable to export QR code image.');
+                }
+            });
+
+            // Estimator Calculator Logic
+            const formatSelect = document.getElementById('formatSelect');
+            const wordSlider = document.getElementById('wordSlider');
+            const wordVal = document.getElementById('wordVal');
+            const speedSelect = document.getElementById('speedSelect');
+            const loreSelect = document.getElementById('loreSelect');
+
+            const outReadingTime = document.getElementById('outReadingTime');
+            const outPages = document.getElementById('outPages');
+            const outTimeline = document.getElementById('outTimeline');
+            const outCost = document.getElementById('outCost');
+            const copyEstimateBtn = document.getElementById('copyEstimateBtn');
+
+            function calculateEstimates() {
+                const words = parseInt(wordSlider.value);
+                wordVal.textContent = `${words.toLocaleString('en-GB')} Words`;
+
+                const baseCostPerWord = parseFloat(formatSelect.value);
+                const speedMult = parseFloat(speedSelect.value);
+                const speedDaysMult = parseFloat(speedSelect.options[speedSelect.selectedIndex].getAttribute('data-days'));
+                const loreMult = parseFloat(loreSelect.value);
+
+                // Calculations
+                // Reading time: ~250 words per minute
+                const totalReadingMins = Math.round(words / 250);
+                const readHours = Math.floor(totalReadingMins / 60);
+                const readMins = totalReadingMins % 60;
+                let readingTimeStr = "";
+                if (readHours > 0) {
+                    readingTimeStr = `${readHours} Hr ${readMins} Mins`;
+                } else {
+                    readingTimeStr = `${readMins} Mins`;
+                }
+
+                // Estimated paperback pages: ~250 words per standard page
+                const totalPages = Math.round(words / 250);
+
+                // Estimated drafting & editing timeline (base ~1,000 words per studio day)
+                const baseDays = (words / 1000) * loreMult * speedDaysMult;
+                const studioWeeks = (baseDays / 5).toFixed(1); // 5 working days per week
+
+                // Estimated total cost
+                let totalCost = Math.round(words * baseCostPerWord * speedMult * loreMult);
+                if (totalCost < 150) totalCost = 150; // Minimum project fee floor
+
+                outReadingTime.textContent = readingTimeStr;
+                outPages.textContent = `${totalPages.toLocaleString('en-GB')} Pages`;
+                outTimeline.textContent = `${studioWeeks} Weeks`;
+                outCost.textContent = `£${totalCost.toLocaleString('en-GB')}`;
+            }
+
+            formatSelect.addEventListener('change', calculateEstimates);
+            wordSlider.addEventListener('input', calculateEstimates);
+            speedSelect.addEventListener('change', calculateEstimates);
+            loreSelect.addEventListener('change', calculateEstimates);
+
+            // Initial calculation run
+            calculateEstimates();
+
+            // Copy Estimate Summary
+            copyEstimateBtn.addEventListener('click', () => {
+                const formatName = formatSelect.options[formatSelect.selectedIndex].getAttribute('data-name');
+                const loreName = loreSelect.options[loreSelect.selectedIndex].getAttribute('data-name');
+                const speedName = speedSelect.options[speedSelect.selectedIndex].text;
+
+                const summaryText = `Creative Writing Project Estimate:\n\nParameters:\n- Format: ${formatName}\n- Word Count: ${wordSlider.value} words\n- Worldbuilding Depth: ${loreName}\n- Turnaround Speed: ${speedName}\n\nEstimated Output:\n- Reading Time: ${outReadingTime.textContent}\n- Estimated Pages: ${outPages.textContent}\n- Delivery Timeline: ${outTimeline.textContent}\n- Estimated Cost Quote: ${outCost.textContent}`;
+
+                copyToClipboard(summaryText);
+                showToast('Estimate summary copied to clipboard!');
+            });
+
+            function copyToClipboard(text) {
+                const tempInput = document.createElement('textarea');
+                tempInput.value = text;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+            }
+
+            function showToast(msg) {
+                const toast = document.getElementById('toast');
+                const toastMsg = document.getElementById('toastMsg');
+                toastMsg.textContent = msg;
+                toast.classList.remove('translate-y-20', 'opacity-0');
+                
+                setTimeout(() => {
+                    toast.classList.add('translate-y-20', 'opacity-0');
+                }, 2500);
+            }
+        });
+    </script>
+</body>
+</html>
